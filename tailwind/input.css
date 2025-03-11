@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.rrf-tio-bar a {
+  @apply underline font-bold;
+}
+.main_menu li {
+  @apply flex justify-center bg-amber-300;
+}
+.main_menu li a {
+  @apply block py-2 px-4;
+}

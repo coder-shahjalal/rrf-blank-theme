@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{ 'style.css' |asset_url|stylesheet_tag}}
+    {{ 'tailwind.css'|asset_url|stylesheet_tag }}
+     {% comment %} <link rel="stylesheet" href="{{ 'style.css'|asset_url }}"> {% endcomment %}
+    
+    
+     
+
+</head>
+<body>
+    {{content_for_header}}
+     {% include 'header' %}
+    {{ content_for_layout }}
+   
+
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quia.</h2>
+
+    
+
+    {% include 'footer' %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Shopify theme files that should not be tracked
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+
+# Tailwind CSS build artifacts
+assets/tailwind.css
+assets/tailwind.css.map
+
+# Logs & Temp Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.lock
+
+# Editor & OS-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
