@@ -3,3 +3,20 @@
 .container {
   @apply mx-auto px-4;
 }
+<<<<<<< HEAD
+
+=======
+
+.rrf-blank-menu ul {
+  @apply flex justify-center;
+}
+.rrf-blank-menu ul li {
+  @apply block py-2 px-4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply focus:outline-none;
+}
+>>>>>>> c1df5f919dfbf7241331cc6238cc9df709899e99
