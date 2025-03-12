@@ -1,1 +1,33 @@
-<h1>this is footer page load in footer.liquid</h1>
+<footer>
+
+    <div class="bg-gray-100">
+        <div class="container">
+            <div class="flex">
+                <div class="w-3/12 pr-4">
+                    <a href=""><img src="{{ 'logo.png'|asset_url }}" alt=""></a>
+                </div>
+
+            
+              
+               
+                <div class="w-9/12 flex">
+
+                    <div class="flex -mx-4">
+                        {% for i in (1..4) %}
+                            <div class="w-3/12 px-4">
+                            
+                                <div>Company</div>
+                                <ul>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">Work</a></li>
+                                    <li><a href="">Career</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
