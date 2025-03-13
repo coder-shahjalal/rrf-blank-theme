@@ -48,7 +48,8 @@
   font-display: swap;
 }
 
-body {
+body,
+.single-product-box h3 {
   font-family: "Satoshi", sans-serif;
 }
 
@@ -60,4 +61,38 @@ h5,
 h6 {
   font-family: "Integral CF", sans-serif;
   font-weight: 700;
+}
+/* img.slick-next.slick-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img.slick-prev {
+  position: absolute;
+  top: 40;
+  right: 0;
+} */
+.testimonial-carousel > img {
+  position: absolute;
+  right: 40px;
+  top: -70px;
+  cursor: pointer;
+}
+
+.testimonial-carousel > img:last-child {
+  right: 0;
+}
+
+.rrf-promo-1 {
+  background-image: url("image-11.jpeg");
+}
+.rrf-promo-2 {
+  background-image: url("image-12.jpeg");
+}
+.rrf-promo-3 {
+  background-image: url("image-13.jpeg");
+}
+.rrf-promo-4 {
+  background-image: url("image-14.jpeg");
 }
