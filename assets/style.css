@@ -48,7 +48,8 @@
   font-display: swap;
 }
 
-body {
+body,
+.single-product-box h3 {
   font-family: "Satoshi", sans-serif;
 }
 

@@ -16,3 +16,7 @@ input[type="email"],
 input[type="password"] {
   @apply focus:outline-none;
 }
+
+.rrf-title-section {
+  @apply text-[48px] text-black mb-8;
+}
