@@ -6,6 +6,8 @@
     <title>Document</title>
     {{ 'style.css' |asset_url|stylesheet_tag}}
     {{ 'tailwind.css'|asset_url|stylesheet_tag }}
+
+    
     <link rel="icon" href="{{ 'logo.png' | asset_url }}" type="image/png">
 
      {% comment %} <link rel="stylesheet" href="{{ 'style.css'|asset_url }}"> {% endcomment %}
