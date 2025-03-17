@@ -9,7 +9,48 @@
   "market": [],
   "order": [],
   "page": [],
-  "product": [],
+  "product": [
+    {
+      "key": "operating-system",
+      "namespace": "shopify",
+      "name": "Operating system",
+      "description": "Defines the system software a device uses, such as iOS or ChromeOS",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "license-type",
+      "namespace": "shopify",
+      "name": "License type",
+      "description": "Specifies the type of software license, such as open-source or one-time purchase",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "user-type",
+      "namespace": "shopify",
+      "name": "User type",
+      "description": "Identifies the intended user of a software product, such as individual or small business",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "software-features",
+      "namespace": "shopify",
+      "name": "Software features",
+      "description": "Identifies the key functionalities of a software product, such as privacy protection or auto backup",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "variant": [],
   "shop": []
 }

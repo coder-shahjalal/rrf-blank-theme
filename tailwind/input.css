@@ -20,11 +20,8 @@ input[type="password"] {
 .rrf-title-section {
   @apply text-[48px] text-black;
 }
-.testimonial-carousel .slick-list {
-  margin-left: -12px;
-  margin-right: -12px;
-}
 
-.rrf-promo-1 {
+
+/* .rrf-promo-1 {
   @apply w-full h-64 bg-[url('{{ "image-11.jpeg" | asset_url }}')] bg-cover bg-center;
-}
+} */
