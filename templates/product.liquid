@@ -40,12 +40,12 @@
           <div class="flex">
             <div class="w-48 mr-3">
               {% for i in (1..3) %}
-                <img class="rounded-2xl mb-3 w-full" src="{{'product.png'|asset_url}}" alt="productimg">
+                <img class="rounded-2xl mb-3 w-full" src="{{'productt.png'|asset_url}}" alt="productimg">
               {% endfor %}
             </div>
 
             <div class="w-full">
-              <img class="rounded-2xl mb-3 w-full" src="{{'product.png' |  asset_url}}" alt="">
+              <img class="rounded-2xl mb-3 w-full" src="{{'productt.png' |  asset_url}}" alt="">
             </div>
           </div>
         </div>
@@ -90,14 +90,28 @@
       </div>
 
       <script>
-        jQuery(document).ready(function($){
-          $('.rrf-product-tab button').click(function(){
-            let index= $(this).index();
-            $('.rrf-product-tab button').removeClass('active');
-            $(this).addclass('active');
-            $(.'tab-content').hide().eq(index).show()
-          })
-        })
+        // jQuery(document).ready(function($){
+        //   $('.rrf-product-tab button').click(function(){
+        //     let index= $(this).index();
+        //     $('.rrf-product-tab button').removeClass('active');
+        //     $(this).addClass('active');
+        //     $('.tab-content').hide().eq(index).show()
+        //   })
+        // })
+
+        jQuery(document).ready(function ($) {
+  $('.rrf-product-tab button').click(function () {
+    let index = $(this).index();
+    $('.rrf-product-tab button').removeClass('active');
+    $(this).addClass('active'); // ✅ addclass → addClass
+    $('.tab-content').hide().eq(index).show(); // ✅ $(.'tab-content') → $('.tab-content')
+  });
+
+  // ডিফল্টভাবে প্রথম ট্যাব দেখানো হবে
+  $('.tab-content').hide();
+  $('.tab-content').first().show();
+  $('.rrf-product-tab button').first().addClass('active');
+});
       </script>
 
       <div class="rrf-product-tab">
@@ -110,7 +124,7 @@
           {{ product.content }}
         </div>
 
-        <div class="teb-content" id="rating-reviews">
+        <div class="tab-content" id="rating-reviews">
           <div class="flex items-center mb-6">
             <div class="w-4/12 pr-4">
               <div class="text-black text-xl font-bold">
@@ -159,7 +173,7 @@
           <div class="flex -mx-4 flex-wrap">
             {% for i in (1..9) %}
               <div class="w-4/12 px-4 mb-6">
-                {% include 'single-testimonial' %}
+                {% render 'single-testimonial' %}
               </div>
             {% endfor %}
           </div>
@@ -172,38 +186,11 @@
         </div>
       </div>
              <div class="pt-16">
-            <h2 class="rrf-section-title mb-12 text-center">You Might Also Like</h2>
+            <h2 class="rrf-title-section mb-12 text-center">You Might Also Like</h2>
             <div class="flex flex-wrap -mx-4">
               {% for i in (1..4) %}
-                <div class="w-1/4 px-4 single-product-box text-black">
-                  <div class="bg-[#f0eeed] rounder-lg mb-6 rounded-xl p-4">
-                    <img class="w-full rounded-xl" src="{{'product.png'|asset_url}}" alt="">
-                  </div>
-
-                  <h3 class="text-xl mb-2">T-Shirt With Type Details</h3>
-
-                  <div class="flex items-center text-gray-500 mb-4">
-                    <div class="flex mr-2">
-                      {% for i in (1..5) %}
-                        <svg
-                          width="17.584961"
-                          height="16.724365"
-                          viewBox="0 0 17.585 16.7244"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>
-                          		Created with Pixso.
-                          </desc>
-                          <defs/>
-                          <path id="Star 1" d="M8.79 0L6.17 5.63L0 6.38L4.55 10.62L3.35 16.72L8.79 13.7L14.22 16.72L13.03 10.62L17.58 6.38L11.41 5.63L8.79 0Z" fill="#FFC633" fill-opacity="1.000000" fill-rule="evenodd"/>
-                        </svg>
-                      {% endfor %}
-                    </div>
-                    3.5/5
-                  </div>
-                  <div class="text-2xl font-bold">$129</div>
+                <div class="w-1/4 px-4 ">
+                  {% render 'single-product' %}
                 </div>
               {% endfor %}
             </div>
