@@ -1,203 +1,265 @@
-
 <div class="bg-gray-50">
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-8 text-gray-800">Your Shopping Cart</h1>
-        
-        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-            <!-- Cart Items Section -->
-            <div class="lg:col-span-8">
-                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700">Cart Items</h2>
-                    
-                    <div id="cart-items">
-                        <!-- Cart Item 1 -->
-                        <div class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 border-b border-gray-200" data-id="1" data-price="129.99">
-                            <div class="flex items-center mb-4 sm:mb-0">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Product 1" class="w-20 h-20 object-cover rounded">
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-800">Premium Headphones</h3>
-                                    <p class="text-gray-600">Black | Wireless</p>
-                                    <p class="text-primary font-medium">$129.99</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="flex items-center border border-gray-300 rounded">
-                                    <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
-                                    <input type="number" class="quantity-input w-12 text-center py-1 border-0 focus:ring-0" value="1" min="1" max="10">
-                                    <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
-                                </div>
-                                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Cart Item 2 -->
-                        <div class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 border-b border-gray-200" data-id="2" data-price="49.99">
-                            <div class="flex items-center mb-4 sm:mb-0">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Product 2" class="w-20 h-20 object-cover rounded">
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-800">Smart Watch Band</h3>
-                                    <p class="text-gray-600">Blue | Medium</p>
-                                    <p class="text-primary font-medium">$49.99</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="flex items-center border border-gray-300 rounded">
-                                    <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
-                                    <input type="number" class="quantity-input w-12 text-center py-1 border-0 focus:ring-0" value="1" min="1" max="10">
-                                    <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
-                                </div>
-                                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Cart Item 3 -->
-                        <div class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4" data-id="3" data-price="89.99">
-                            <div class="flex items-center mb-4 sm:mb-0">
-                                <img src="/placeholder.svg?height=80&width=80" alt="Product 3" class="w-20 h-20 object-cover rounded">
-                                <div class="ml-4">
-                                    <h3 class="text-lg font-medium text-gray-800">Portable Speaker</h3>
-                                    <p class="text-gray-600">Green | Waterproof</p>
-                                    <p class="text-primary font-medium">$89.99</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="flex items-center border border-gray-300 rounded">
-                                    <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
-                                    <input type="number" class="quantity-input w-12 text-center py-1 border-0 focus:ring-0" value="1" min="1" max="10">
-                                    <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
-                                </div>
-                                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6">
-                        <a href="#" class="text-primary hover:text-primary-dark flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                            </svg>
-                            Continue Shopping
-                        </a>
-                    </div>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8 text-gray-800">Your Shopping Cart</h1>
+
+    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+      <!-- Cart Items Section -->
+      <div class="lg:col-span-8">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 class="text-xl font-semibold mb-4 text-gray-700">Cart Items</h2>
+
+          <div id="cart-items">
+            <!-- Cart Item 1 -->
+            <div
+              class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 border-b border-gray-200"
+              data-id="1"
+              data-price="129.99"
+            >
+              <div class="flex items-center mb-4 sm:mb-0">
+                <img src="/placeholder.svg?height=80&width=80" alt="Product 1" class="w-20 h-20 object-cover rounded">
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Premium Headphones</h3>
+                  <p class="text-gray-600">Black | Wireless</p>
+                  <p class="text-primary font-medium">$129.99</p>
                 </div>
-            </div>
-            
-            <!-- Order Summary Section -->
-            <div class="lg:col-span-4">
-                <div class="bg-white rounded-lg shadow-md p-6 sticky top-6">
-                    <h2 class="text-xl font-semibold mb-4 text-gray-700">Order Summary</h2>
-                    
-                    <div class="space-y-4">
-                        <div class="flex justify-between">
-                            <span class="text-gray-600">Subtotal</span>
-                            <span class="font-medium text-gray-800" id="subtotal">$269.97</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-600">Shipping</span>
-                            <span class="font-medium text-gray-800">$9.99</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="text-gray-600">Tax</span>
-                            <span class="font-medium text-gray-800" id="tax">$21.60</span>
-                        </div>
-                        <div class="border-t pt-4 flex justify-between">
-                            <span class="text-lg font-semibold text-gray-800">Total</span>
-                            <span class="text-lg font-semibold text-gray-800" id="total">$301.56</span>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6">
-                        <div class="mb-4">
-                            <label for="promo" class="block text-sm font-medium text-gray-700 mb-1">Promo Code</label>
-                            <div class="flex">
-                                <input type="text" id="promo" class="flex-1 rounded-l-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50">
-                                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-r-md hover:bg-gray-300">Apply</button>
-                            </div>
-                        </div>
-                        
-                        <button id="checkout-btn" class="w-full bg-primary text-white py-3 px-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors">
-                            Proceed to Checkout
-                        </button>
-                    </div>
+              </div>
+              <div class="flex items-center">
+                <div class="flex items-center border border-gray-300 rounded">
+                  <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input w-12 text-center py-1 border-0 focus:ring-0"
+                    value="1"
+                    min="1"
+                    max="10"
+                  >
+                  <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
                 </div>
+                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
             </div>
+
+            <!-- Cart Item 2 -->
+            <div
+              class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 border-b border-gray-200"
+              data-id="2"
+              data-price="49.99"
+            >
+              <div class="flex items-center mb-4 sm:mb-0">
+                <img src="/placeholder.svg?height=80&width=80" alt="Product 2" class="w-20 h-20 object-cover rounded">
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Smart Watch Band</h3>
+                  <p class="text-gray-600">Blue | Medium</p>
+                  <p class="text-primary font-medium">$49.99</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="flex items-center border border-gray-300 rounded">
+                  <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input w-12 text-center py-1 border-0 focus:ring-0"
+                    value="1"
+                    min="1"
+                    max="10"
+                  >
+                  <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
+                </div>
+                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Cart Item 3 -->
+            <div
+              class="cart-item flex flex-col sm:flex-row justify-between items-start sm:items-center py-4"
+              data-id="3"
+              data-price="89.99"
+            >
+              <div class="flex items-center mb-4 sm:mb-0">
+                <img src="/placeholder.svg?height=80&width=80" alt="Product 3" class="w-20 h-20 object-cover rounded">
+                <div class="ml-4">
+                  <h3 class="text-lg font-medium text-gray-800">Portable Speaker</h3>
+                  <p class="text-gray-600">Green | Waterproof</p>
+                  <p class="text-primary font-medium">$89.99</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="flex items-center border border-gray-300 rounded">
+                  <button class="quantity-btn minus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input w-12 text-center py-1 border-0 focus:ring-0"
+                    value="1"
+                    min="1"
+                    max="10"
+                  >
+                  <button class="quantity-btn plus px-3 py-1 bg-gray-100 text-gray-600 hover:bg-gray-200">+</button>
+                </div>
+                <button class="remove-item ml-4 text-red-500 hover:text-red-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <a href="#" class="text-primary hover:text-primary-dark flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Continue Shopping
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Order Summary Section -->
+      <div class="lg:col-span-4">
+        <div class="bg-white rounded-lg shadow-md p-6 sticky top-6">
+          <h2 class="text-xl font-semibold mb-4 text-gray-700">Order Summary</h2>
+
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <span class="text-gray-600">Subtotal</span>
+              <span class="font-medium text-gray-800" id="subtotal">$269.97</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Shipping</span>
+              <span class="font-medium text-gray-800">$9.99</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-600">Tax</span>
+              <span class="font-medium text-gray-800" id="tax">$21.60</span>
+            </div>
+            <div class="border-t pt-4 flex justify-between">
+              <span class="text-lg font-semibold text-gray-800">Total</span>
+              <span class="text-lg font-semibold text-gray-800" id="total">$301.56</span>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <div class="mb-4">
+              <label for="promo" class="block text-sm font-medium text-gray-700 mb-1">Promo Code</label>
+              <div class="flex">
+                <input
+                  type="text"
+                  id="promo"
+                  class="flex-1 rounded-l-md border-gray-300 shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                >
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-r-md hover:bg-gray-300">Apply</button>
+              </div>
+            </div>
+
+            <button
+              id="checkout-btn"
+              class="w-full bg-primary text-white py-3 px-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors"
+            >
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <script>
-        $(document).ready(function() {
-            // Update quantities
-            $('.quantity-btn').on('click', function() {
-                const input = $(this).siblings('.quantity-input');
-                let value = parseInt(input.val());
-                
-                if ($(this).hasClass('minus')) {
-                    if (value > 1) {
-                        value--;
-                    }
-                } else {
-                    if (value < 10) {
-                        value++;
-                    }
-                }
-                
-                input.val(value);
-                updateTotals();
-            });
-            
-            // Update on manual input change
-            $('.quantity-input').on('change', function() {
-                updateTotals();
-            });
-            
-            // Remove item
-            $('.remove-item').on('click', function() {
-                $(this).closest('.cart-item').fadeOut(300, function() {
-                    $(this).remove();
-                    updateTotals();
-                    
-                    // If cart is empty, show message
-                    if ($('.cart-item').length === 0) {
-                        $('#cart-items').html('<p class="py-4 text-gray-500">Your cart is empty.</p>');
-                    }
-                });
-            });
-            
-            // Checkout button
-            $('#checkout-btn').on('click', function() {
-                alert('Proceeding to checkout...');
-                // In a real app, this would redirect to checkout page
-            });
-            
-            // Calculate totals
-            function updateTotals() {
-                let subtotal = 0;
-                
-                $('.cart-item').each(function() {
-                    const price = parseFloat($(this).data('price'));
-                    const quantity = parseInt($(this).find('.quantity-input').val());
-                    subtotal += price * quantity;
-                });
-                
-                const tax = subtotal * 0.08; // 8% tax rate
-                const total = subtotal + tax + 9.99; // Adding shipping
-                
-                $('#subtotal').text('$' + subtotal.toFixed(2));
-                $('#tax').text('$' + tax.toFixed(2));
-                $('#total').text('$' + total.toFixed(2));
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      // Update quantities
+      $('.quantity-btn').on('click', function () {
+        const input = $(this).siblings('.quantity-input');
+        let value = parseInt(input.val());
+
+        if ($(this).hasClass('minus')) {
+          if (value > 1) {
+            value--;
+          }
+        } else {
+          if (value < 10) {
+            value++;
+          }
+        }
+
+        input.val(value);
+        updateTotals();
+      });
+
+      // Update on manual input change
+      $('.quantity-input').on('change', function () {
+        updateTotals();
+      });
+
+      // Remove item
+      $('.remove-item').on('click', function () {
+        $(this)
+          .closest('.cart-item')
+          .fadeOut(300, function () {
+            $(this).remove();
+            updateTotals();
+
+            // If cart is empty, show message
+            if ($('.cart-item').length === 0) {
+              $('#cart-items').html('<p class="py-4 text-gray-500">Your cart is empty.</p>');
             }
+          });
+      });
+
+      // Checkout button
+      $('#checkout-btn').on('click', function () {
+        alert('Proceeding to checkout...');
+        // In a real app, this would redirect to checkout page
+      });
+
+      // Calculate totals
+      function updateTotals() {
+        let subtotal = 0;
+
+        $('.cart-item').each(function () {
+          const price = parseFloat($(this).data('price'));
+          const quantity = parseInt($(this).find('.quantity-input').val());
+          subtotal += price * quantity;
         });
-    </script>
+
+        const tax = subtotal * 0.08; // 8% tax rate
+        const total = subtotal + tax + 9.99; // Adding shipping
+
+        $('#subtotal').text('$' + subtotal.toFixed(2));
+        $('#tax').text('$' + tax.toFixed(2));
+        $('#total').text('$' + total.toFixed(2));
+      }
+    });
+  </script>
 </div>
