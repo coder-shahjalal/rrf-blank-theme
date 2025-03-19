@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <link rel="icon" href="{{ 'logo.png' | asset_url }}" type="image/png">
 
     <script
@@ -35,10 +36,10 @@
   </head>
   <body>
     {{ content_for_header }}
-    {% include 'header' %}
+    {% render 'header' %}
 
     {{ content_for_layout }}
 
-    {% include 'footer' %}
+    {% render 'footer' %}
   </body>
 </html>

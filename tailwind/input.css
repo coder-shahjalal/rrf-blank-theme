@@ -20,3 +20,11 @@ input[type="password"] {
 .rrf-title-section {
   @apply text-[48px] text-black;
 }
+<<<<<<< HEAD
+=======
+
+
+/* .rrf-promo-1 {
+  @apply w-full h-64 bg-[url('{{ "image-11.jpeg" | asset_url }}')] bg-cover bg-center;
+} */
+>>>>>>> d033a8112bf0536b777c5492ad040e3c8da49d4d

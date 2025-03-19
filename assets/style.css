@@ -96,7 +96,15 @@ img.slick-prev {
 .rrf-promo-4 {
   background-image: url("image-14.jpeg");
 }
+<<<<<<< HEAD
 .testimonial-carousel .slick-list {
   margin-left: -12px;
   margin-right: -12px;
 }
+=======
+
+.testimonial-carousel .slick-list {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+>>>>>>> d033a8112bf0536b777c5492ad040e3c8da49d4d
