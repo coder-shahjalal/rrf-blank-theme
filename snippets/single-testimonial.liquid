@@ -1,0 +1,24 @@
+<div class="bg-white shadow-lg rounded-xl p-6 border border-gray-200">
+  <div class="flex items-center mb-4">
+    <!-- User Image -->
+    <img class="w-12 h-12 rounded-full border border-gray-300 object-cover" src="{{'review.png'| asset_url}}" alt="User Avatar">
+
+    <!-- User Info -->
+    <div class="ml-4">
+      <h3 class="text-lg font-semibold text-gray-800">John Doe</h3>
+      <div class="flex text-yellow-500">
+        <!-- Star Rating -->
+        {% for i in (1..5) %}
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.38 4.26h4.486c.969 0 1.371 1.24.588 1.81l-3.631 2.636 1.38 4.26c.3.921-.755 1.688-1.54 1.158L10 13.347l-3.615 2.704c-.785.53-1.84-.237-1.54-1.158l1.38-4.26-3.631-2.636c-.783-.57-.381-1.81.588-1.81h4.486l1.38-4.26z"/>
+          </svg>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Text -->
+  <p class="text-gray-600">
+    "This product is amazing! The quality is excellent, and the delivery was fast. Highly recommend it!"
+  </p>
+</div>

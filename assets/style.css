@@ -97,14 +97,51 @@ img.slick-prev {
   background-image: url("image-14.jpeg");
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .testimonial-carousel .slick-list {
   margin-left: -12px;
   margin-right: -12px;
 }
 =======
+=======
+>>>>>>> 6d71121ad44dafa1df1563302f9ab5f3b9e6e570
 
 .testimonial-carousel .slick-list {
   margin-left: -12px;
   margin-right: -12px;
 }
+<<<<<<< HEAD
 >>>>>>> d033a8112bf0536b777c5492ad040e3c8da49d4d
+=======
+
+.rrf-product-tab {
+  display: flex;
+  justify-content: space-evenly;
+  
+  margin-bottom: 20px;
+}
+
+.rrf-product-tab button {
+ 
+
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.rrf-product-tab button:hover {
+
+  border-bottom: 2px solid black;
+}
+
+.rrf-product-tab button.active {
+ border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+#filter-color{
+  @apply mr-4 mb-4
+}
+>>>>>>> 6d71121ad44dafa1df1563302f9ab5f3b9e6e570
